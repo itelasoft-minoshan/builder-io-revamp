@@ -1,0 +1,85 @@
+/* Vanilla replacement for Oxygen/unslider horizontal carousel */
+.ct-slider .unslider {
+  position: relative;
+  overflow: visible;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.ct-slider .unslider-frame {
+  position: relative;
+  width: 100%;
+}
+
+.ct-slider .oxygen-unslider-container.unslider-horizontal {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.ct-slider .unslider-wrap.unslider-carousel {
+  display: flex !important;
+  flex-wrap: nowrap;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform 0.75s ease;
+  will-change: transform;
+  float: none !important;
+}
+
+.ct-slider .unslider-wrap.unslider-carousel > li {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  min-width: 100%;
+  max-width: 100%;
+  float: none !important;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.ct-slider .unslider-wrap.unslider-carousel .ct-slide {
+  width: 100%;
+}
+
+.ct-slider .unslider-wrap.unslider-carousel img.ct-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ct-slider .unslider-frame .unslider-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  background: rgba(0, 0, 0, 0.2)
+    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==')
+    no-repeat scroll 50% 50% / 7px 11px;
+  border-radius: 32px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  opacity: 0.6;
+  overflow: hidden;
+  text-indent: -999em;
+  transition: opacity 0.2s ease;
+}
+
+.ct-slider .unslider-frame .unslider-arrow:hover {
+  opacity: 1;
+}
+
+.ct-slider .unslider-frame .unslider-arrow.prev {
+  left: 0;
+  right: auto;
+  transform: rotate(-180deg);
+}
+
+.ct-slider .unslider-frame .unslider-arrow.next {
+  left: auto;
+  right: 0;
+}

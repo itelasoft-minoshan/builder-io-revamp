@@ -1,0 +1,24 @@
+{
+  "name": "effi-revamp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/convert-pages.mjs && node scripts/patch-css-urls.mjs && vite build",
+    "preview": "vite preview",
+    "convert": "node scripts/convert-pages.mjs",
+    "assets": "node scripts/download-home-assets.mjs",
+    "patch-css": "node scripts/patch-css-urls.mjs"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-helmet-async": "^3.0.0",
+    "react-router-dom": "^7.18.1"
+  }
+}
